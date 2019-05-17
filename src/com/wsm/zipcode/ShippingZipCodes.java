@@ -30,7 +30,7 @@ public class ShippingZipCodes {
 	public ZipCodeRange zipcodeValidate(String[] zipRange) {
 		if (zipRange.length != 2)
 			throw new IllegalArgumentException(
-					zipRange[0] + "Each range shhould include both their upper and lower bounds");
+					zipRange[0] + "Each range should include both their upper and lower bounds");
 		int lowerBound = stringToInt(zipRange[0]);
 		int upperBound = stringToInt(zipRange[1]);
 		ZipCodeRange zipcode = null;
